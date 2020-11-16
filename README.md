@@ -1,1 +1,1 @@
-# React 시작
+# React 학습시작
