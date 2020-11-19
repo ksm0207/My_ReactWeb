@@ -1,22 +1,23 @@
 import React from "react"
 
 
-function Coffee({coffee_menu}){
-    
+function Coffee({name}){
   return (
-    <h1> 나는  {coffee_menu} 를 (을) 주문했어요 </h1>
+    <h2>나는 {name} 을 좋아합니다</h2>
   )
-
 }
+
+
 
 function App() {
   return ( 
     <div>
       <h1>안녕하세요 ? </h1>
       <h1>반갑습니다 !!</h1>
-      <Coffee coffee_menu ="아메리카노"></Coffee>
-      <Coffee coffee_menu ="콜드브루 진한맛"></Coffee>
-      <Coffee coffee_menu ="에스프레소"></Coffee>
+      <Coffee name ="콜드브루"></Coffee>
+      <Coffee name ="녹차라떼"></Coffee>
+      <Coffee name ="아메리카노"></Coffee>
+      <Coffee name ="에스프레소"></Coffee>
     </div>
     
   );
