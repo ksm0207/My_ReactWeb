@@ -16,30 +16,32 @@ class App extends React.Component{
       }
     } = await axios.get("https://yts-proxy.nomadcoders1.now.sh/list_movies.json")
     this.setState({movies, isLoading : false})
+    console.log(movies)
   };
   componentDidMount(){
     // 컴포넌트가 생성된후 getMovies() 함수를 호출합니다
     this.getMovies();
   }
-  
   render(){
-    const isLoading = this.state.isLoading
-    const movies = this.state.movies
-    return(
+    // ↓ isLoading & movies 를 정의합니다
+    const {isLoading , movies } = this.state
+    return (
       <div>
         {
-          isLoading ? "불러오는중 ..." :
-          movies.map(movie =>(
+          isLoading ? "불러오는중 ..." : movies.map(movie =>(
             <Movie
-              title = {movie.title}     
+              key = {movie.id}
+              id = {movie.id}
+              title = {movie.title}
+              year = {movie.year}
+              summary = {movie.summary}
+              poster = {movie.medium_cover_image}
+              rating = {movie.rating}
+              runtime = {movie.runtime}
             />
           ))}
-        
-      </div>
-    ); 
+      </div>  
+    )
   }
 }
-
-
-
 export default App;
