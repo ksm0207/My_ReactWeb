@@ -21,7 +21,7 @@ return (
         </ul>
         <h4 className = "movie_rating"> 평점 : {rating} ★ </h4>
         <h4 className = "movie_runtime">플레이타임 : {runtime} 분</h4>
-        <h4 className = "movie_summary">요약 : {summary}</h4>
+        <h4 className = "movie_summary">요약 : {summary.slice(0,70)}...</h4>
     </div>
   </div>
 );
