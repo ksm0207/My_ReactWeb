@@ -1,7 +1,6 @@
 *  {
    box-sizing: content-box;
 }
-
 body{
   margin: 0;
   padding: 0;
@@ -17,10 +16,9 @@ body,
 
 /* 영화 컨테이너 CSS */
 .container {
-   /* height: 100%; */
-   /* display: flex; */
-   /* justify-content: center; */
-   
+   height: 100%;
+   display: flex;
+   justify-content: center;
 }
 /* end */
 
