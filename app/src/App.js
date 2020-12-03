@@ -27,13 +27,13 @@ class App extends React.Component{
     // ↓ isLoading & movies 를 정의합니다
     const {isLoading , movies } = this.state
     return (
-      <section class="container">
+      <section className="container">
         {
           isLoading ?( 
-          <div class="loader">
-           <span class="loader_text"> 로딩중... </span>   
+          <div className="loader">
+           <span className="loader_text"> 로딩중... </span>   
           </div>
-          ) : ( <div class="movies">
+          ) : ( <div className="movies">
             {
               movies.map(movie => (
                 <Movie
@@ -45,6 +45,7 @@ class App extends React.Component{
                 poster = {movie.medium_cover_image}
                 rating = {movie.rating}
                 runtime = {movie.runtime}
+                genres = {movie.genres}
                 />
               ))}
           </div> 
