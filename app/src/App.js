@@ -1,6 +1,7 @@
 import React from "react"
 import axios from "axios"
 import Movie from "./Movie"
+import "./App.css";
 
 class App extends React.Component{
   state = {
@@ -26,22 +27,30 @@ class App extends React.Component{
     // ↓ isLoading & movies 를 정의합니다
     const {isLoading , movies } = this.state
     return (
-      <div>
+      <section class="container">
         {
-          isLoading ? "불러오는중 ..." : movies.map(movie =>(
-            <Movie
-              key = {movie.id}
-              id = {movie.id}
-              title = {movie.title}
-              year = {movie.year}
-              summary = {movie.summary}
-              poster = {movie.medium_cover_image}
-              rating = {movie.rating}
-              runtime = {movie.runtime}
-            />
-          ))}
-      </div>  
-    )
-  }
+          isLoading ?( 
+          <div class="loader">
+           <span class="loader_text"> 로딩중... </span>   
+          </div>
+          ) : ( <div class="movies">
+            {
+              movies.map(movie => (
+                <Movie
+                key = {movie.id}
+                id = {movie.id}
+                title = {movie.title}
+                year = {movie.year}
+                summary = {movie.summary}
+                poster = {movie.medium_cover_image}
+                rating = {movie.rating}
+                runtime = {movie.runtime}
+                />
+              ))}
+          </div> 
+          )}
+      </section>
+    ); // end of return 
+  } // end of render Function
 }
 export default App;
