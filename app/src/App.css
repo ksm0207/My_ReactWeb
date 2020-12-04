@@ -31,6 +31,7 @@ body,
    align-items: center;
    font-size: large;
    font-weight: bold;
+   color: yellowgreen;
 }
 /* end */
 
@@ -75,15 +76,16 @@ body,
 /* 영화 제목 날짜 CSS */
 .movie .movie_title,
 .movie .movie_year {
-   margin-bottom: 5px;
+   margin-bottom: 1px;
    columns: #2c2c3c;;
 }
 /* end */
 
 /* 영화 제목 CSS */
 .movie .movie_title {
+   position: relative;
+   top: 3px;
    font-size: 15px;
-   margin-bottom: 5px;
    color:brown;
 }
 /* end */
@@ -98,21 +100,38 @@ body,
 /* 영화 평점 CSS */
 .movie .movie_rating{
    font-size: 15px;
-   margin-top: 5px;
+   margin-top: 30px;
+   color: yellowgreen
 }
 /* end */
 
 /* 영화 시간 CSS */
 .movie .movie_runtime{
    font-size: 15px;
-   margin-top: 5px;
+   margin-top: -15px;
+   color: tomato;
 }
 /* end */
+
 
 /* 영화 장르 --> <li> 날짜 CSS */
 .movie_genres li,
 .movie .movie_year  {
   margin-right: 10px;
   font-size: 14px;
+}
+/* end */
+
+/* 영화 장르 요소 CSS */
+ul {
+   margin:0;
+   padding:0;
+}
+.movie_genres-list{
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+   border : 0;
+   float: left;
+   color: teal;
 }
 /* end */

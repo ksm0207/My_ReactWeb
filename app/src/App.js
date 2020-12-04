@@ -31,7 +31,7 @@ class App extends React.Component{
         {
           isLoading ?( 
           <div className="loader">
-           <span className="loader_text"> 로딩중... </span>   
+           <span className="loader_text">불러오는중...</span>
           </div>
           ) : ( <div className="movies">
             {

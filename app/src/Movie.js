@@ -14,7 +14,7 @@ return (
           {
             genres.map( (cur_genres,index) =>(
               <li key={index} className = "movie_genres-list">
-               {cur_genres}
+              {cur_genres}
               </li>
             ))
           }
