@@ -1,0 +1,100 @@
+/* App.js --> 영화 데이터 정렬 (가운데 양 옆)  */
+.movies {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 220px;
+    padding-top: 65px;
+    width: 75%;   
+ }
+ /* end */
+ 
+ /* Movie.js --> 데이터 CSS */
+ .movies .movie {
+   width: 45%;
+   background-color: white;
+   margin-bottom: 70px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   font-weight: bold;
+   padding: 25px;
+   border-radius: 15px;
+   box-shadow: 0 13px 27px -5px;
+   color: darkslategray;
+ }
+ /* end */
+ 
+ /* 영화 이미지 CSS  */
+ .movie img {
+    position: relative;
+    top: 22px;
+    max-width: 120px;
+    margin-right: 50px;
+    box-shadow: 0 13px 27px -5px;
+ }
+ /* end */
+ 
+ /* 영화 제목 날짜 CSS */
+ .movie .movie_title,
+ .movie .movie_year {
+    margin-bottom: 1px;
+    columns: #2c2c3c;;
+ }
+ /* end */
+ 
+ /* 영화 제목 CSS */
+ .movie .movie_title {
+    position: relative;
+    top: 3px;
+    font-size: 15px;
+    color:brown;
+ }
+ /* end */
+ 
+ /* 영화 장르 CSS */
+ .movie .movie_genres {
+    list-style: none;
+    padding: 0;
+ }
+ /* end */
+ 
+ /* 영화 평점 CSS */
+ .movie .movie_rating{
+    font-size: 15px;
+    margin-top: 30px;
+    color: yellowgreen
+ }
+ /* end */
+ 
+ /* 영화 시간 CSS */
+ .movie .movie_runtime{
+    font-size: 15px;
+    margin-top: -15px;
+    color: tomato;
+ }
+ /* end */
+ 
+ 
+ /* 영화 장르 --> <li> 날짜 CSS */
+ .movie_genres li,
+ .movie .movie_year  {
+   margin-right: 10px;
+   font-size: 14px;
+ }
+ /* end */
+ 
+ /* 영화 장르 요소 CSS */
+ ul {
+    margin:0;
+    padding:0;
+ }
+ .movie_genres-list{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+    color: teal;
+ }
+ /* end */
