@@ -1,0 +1,14 @@
+.logo{
+    position: relative;
+    bottom: 55px;
+    left: 920px;
+    color: white;
+}
+.logo img{
+    position: relative;
+    top: 22px;
+    max-width: 85px;
+    border-radius: 20px;
+    box-shadow: 0 13px 27px -5px;
+}
+

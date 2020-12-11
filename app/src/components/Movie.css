@@ -13,7 +13,7 @@
  /* Movie.js --> 데이터 CSS */
  .movies .movie {
    width: 45%;
-   background-color: darkslategray ;
+   background-color: black ;
    margin-bottom: 70px;
    display: flex;
    align-items: flex-start;
@@ -22,7 +22,7 @@
    padding: 25px;
    border-radius: 15px;
    box-shadow: 0 13px 27px -5px;
-   color: darkslategray;
+   color: white;
  }
  /* end */
  
