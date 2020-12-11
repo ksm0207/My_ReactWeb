@@ -31,7 +31,7 @@ class Home extends React.Component{
         {
           isLoading ?( 
           <div className="loader">
-           <span className="loader_text">불러오는중...</span>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/948460320894342091/41316AE448EAF126C7067790ADCEAC99B26B576C/"/>
           </div>
           ) : ( <div className="movies">
             {
