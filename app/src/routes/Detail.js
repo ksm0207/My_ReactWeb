@@ -6,7 +6,7 @@ function Detail(prop){
     console.log("Item : ",items.location.state)
     return (
         <div>
-            <span style={{color:"red"}}>Detail</span>
+            <span style={{color:"red"}}>{items.location.state}</span>
         </div>
     )
 }

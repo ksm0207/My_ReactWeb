@@ -1,25 +1,29 @@
 /* App.js --> 영화 데이터 정렬 (가운데 양 옆)  */
 .movies {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 220px;
-    padding-top: 65px;
-    width: 75%;   
+    width: 80%;   
  }
- /* end */
+
+
+ .movies .movie a {
+    display: flex;
+    margin-bottom: 50px;
+    text-decoration: none;
+ }
+
+  /* end */
  
  /* Movie.js --> 데이터 CSS */
  .movies .movie {
-   width: 45%;
+   width: 43.5%;
    background-color: rgb(54, 53, 53) ;
    margin-bottom: 70px;
-   display: flex;
-   align-items: flex-start;
-   justify-content: space-between;
    font-weight: bold;
-   padding: 25px;
+   padding: 10px;
    border-radius: 15px;
    box-shadow: 0 13px 27px -5px;
    color: rgb(209, 188, 188);
@@ -30,9 +34,11 @@
  .movie img {
     position: relative;
     top: 22px;
-    max-width: 120px;
+    left: 10px;
+    max-width: 200px;
     margin-right: 50px;
     box-shadow: 0 13px 27px -5px;
+    color: whitesmoke;
  }
  /* end */
  
@@ -56,6 +62,7 @@
  /* 영화 장르 CSS */
  .movie .movie_genres {
     list-style: none;
+    color: teal;
     padding: 0;
  }
  /* end */
@@ -100,6 +107,5 @@
     padding: 0 0 0 0;
     border : 0;
     float: left;
-    color: tomato;
  }
  /* end */
