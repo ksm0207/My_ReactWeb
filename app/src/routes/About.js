@@ -1,8 +1,12 @@
 import React from "react"
+import "./About.css"
 
 function About(){
     return(
-        <h1>Hi Hello?</h1>
+        <div className="about_container">
+            <span>First Span</span>
+            <span>Last Span</span>
+        </div>
     )
 }
 
