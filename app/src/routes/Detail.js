@@ -27,12 +27,12 @@ class Detail extends React.Component{
             return (
                 <div className="detail_data">
                     <img src={location.state.poster}></img>
-                    <span>{location.state.title}</span>
-                    <span>{location.state.year}</span>
-                    <span>{location.state.genres}</span>
-                    <span>{location.state.rating}</span>
-                    <span>{location.state.runtime}</span>
-                    <span>{location.state.summary.slice(0,70)}...</span>
+                    <span className="detail_title"> {location.state.title}</span>
+                    <span className="detail_genres">{location.state.genres}</span>
+                    <span className="detail_year"> {location.state.year}</span>
+                    <span className="detail_rating">{location.state.rating}점</span>
+                    <span className="detail_runtime">{location.state.runtime}분</span>
+                    <span className="detail_summary">{location.state.summary.slice(0,70)}</span>
                 </div>
             )
         }else{

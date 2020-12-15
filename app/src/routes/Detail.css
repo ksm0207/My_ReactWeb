@@ -1,0 +1,43 @@
+.detail_data {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 50px;
+}
+.detail_data img{
+    position: relative;
+    top: 22px;
+    left: 10px;
+    width: 25%;
+    margin-right: 50px;
+    box-shadow: 0 13px 27px -5px;
+    color: whitesmoke;
+}
+.detail_title , .detail_year,
+.detail_genres , .detail_rating,
+.detail_runtime , .detail_summary{
+    color: white;
+}
+
+.detail_title {
+    position: relative;
+    font-size: 45px;
+    color: wheat;
+    top: 150px;
+}
+.detail_year {
+    position: relative;
+    font-size: 45px;
+    color: wheat;
+    top: 150px;
+}
+.detail_genres{
+    position: relative;
+    font-size: 15px;
+    color: teal;
+    top: 210px;
+    right: 166px;
+}
